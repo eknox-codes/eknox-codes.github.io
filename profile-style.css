@@ -1,6 +1,6 @@
 body {
     background-color: rgb(255, 255, 255);
-    font-family: Helvetica, Arial, sans-serif ;
+    font-family: "SUSE", Helvetica, Arial, sans-serif ;
     margin: 0px;
     font-size: 1.25vw;
     
@@ -66,11 +66,16 @@ body > header {
     color: black;
 }
 
+#post-buttons {
+    justify-self: end;
+    padding: 7%;
+    margin: 7%;
+}
+
 #grid-container {
     display: grid;
     grid-template-areas:
-    "post-image post-caption username"
-    "post-image post-caption post-button" ;
+    "post-image post-caption username" ;
     border: 1px grey;
     border-style: solid;
     margin: 2%;
@@ -169,6 +174,7 @@ body > header {
 
 section > h2 {
     margin: 2%;
+    font-size: 160%;
 }
 
 body > footer {

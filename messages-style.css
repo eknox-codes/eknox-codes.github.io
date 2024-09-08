@@ -46,86 +46,63 @@ body > header {
     font-size: 130%;
 }
 
-#feed-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #ffd3ba;
-}
-
-#feed {
+main > h2 {
     margin-left: 2%;
+    grid-area: title;
 }
 
 .filter-button {
     text-decoration: none;
     color: black;
-    padding: 1em;
-    margin: 0.7em;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 8%;
+    
     font-size: 130%;
-    align-items: center;
+    align-items: start;
+    margin-top: 10%;
 }
 
 #filter {
-    display: flex;
-    justify-content: space-between;
-    padding: 1em;
-    margin: 1em;
+    margin-left: 10%;
+    grid-area: filter;
 }
 
-#post-image {
-    object-fit: cover;
-    margin: 5%;
-    height: 25em;
-    width: 25em;
-    grid-area: post-image;
+
+.ul-filter {
+    list-style: none;
+    margin-left: 2%;
+    padding-left: 0;
 }
 
-#username {
-    grid-area: username;
-    margin: 10%;
-    font-size: 150%;
+#messages {
+    margin-left: 2%;
+    grid-area: messages
 }
 
-#username > a {
-    text-decoration: none;
-    color: black;
-}
-
-#post-buttons {
-    grid-area: post-button;
-    margin: 10%;
-    align-self: end;
-}
-
-.action-button {
+.message {
+    display: grid;
     background-color: #f49fbc;
+    border: 1px solid black;
+    padding: 2%;
+    margin: 2%;
+}
+
+#messages a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.507);
+    font-size: 120%;
+}
+
+#messages p {
+    font-size: 130%;
 }
 
 #grid-container {
     display: grid;
     grid-template-areas:
-    "post-image post-caption username"
-    "post-image post-caption post-button" ;
-    grid-template-columns: 3fr 4fr 1fr;
-    border: 1px grey;
-    border-style: solid;
-    margin: 2%;
-    background-color: #5a535328;
+    "title filter"
+    "messages filter" ;
+    grid-template-columns: 9fr 2fr;
+    align-items: start;
 }
-
-.caption {
-    grid-area: post-caption;
-    align-self: center;
-    padding: 5%;
-    border: 1px gray;
-    border-style: solid;
-    border-radius: 25px;
-    font-size: 120%;
-}
-
 
 body > footer {
     background-color: rgb(81, 131, 223);
@@ -147,4 +124,5 @@ body > footer {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
+    
 }
