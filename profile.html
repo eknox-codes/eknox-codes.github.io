@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="profile-style.css">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MomentMosaic </title>
+</head>
+<body>
+    <header>
+        <img src="./logo.png" alt="Moment Mosaic logo" id="logo">
+        <h1>Moment Mosaic</h1>
+        <nav>
+            <ul class="ul">
+                <li>
+                    <a href="./index.html" class="navbutton">Home</a>
+                </li>
+                <li>
+                    <a href=""class="navbutton">Messages</a>
+                </li>
+                <li>
+                    <a href="./profile.html" target="_blank" class="navbutton">Profile</a>
+                </li>
+            </ul>
+        </nav>
+        <input type="text" placeholder="Search.." id="search">
+    </header>
+    <main>
+        <section id="profile-grid-container">
+            <h1 id="username">@user</h1>
+            <img src="./images/profilepic.jpg" alt="user's profile picture" id="profpic">
+            <p id="about-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, labore.</p>
+            <div id="favourites">
+                <h2>Favourites</h2>
+                <div>
+                    <img src="./images/photo6.jpg" alt="user's first favourite photo" class="favphoto">
+                    <img src="./images/photo7.jpg" alt="user's second favourite photo" class="favphoto">
+                    <img src="./images/photo8.jpg" alt="user's third favourite photo" class="favphoto">
+                </div>
+            </div>
+            <div id="buttons">
+                <input type="button" value="Edit Profile" class="prof-button">
+                <input type="button" value="Edit Page" class="prof-button">
+            </div>
+            <div id="filter">
+                <h2>Filter By:</h2>
+                <ul class="prof-ul">
+                    <li>
+                        <a href="" class="filter-button">Favourites</a>
+                    </li>
+                    <li>
+                        <a href="" class="filter-button">Recents</a>
+                    </li>
+                    <li>
+                        <a href="" class="filter-button">Oldest</a>
+                    </li>
+                    <li>
+                        <a href="" class="filter-button">Popular</a>
+                    </li>
+                </ul>
+            </div>
+            <input type="button" value="Post" id="Post">
+        </section>
+        <section>
+            <h2>Posts</h2>
+            <article id="grid-container">
+                <img src="./images/photo4.jpg" alt="user's post" id="post-image">
+                <p class="caption">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, eaque?</p>
+            </article>
+            <article id="grid-container">
+                <img src="./images/photo5.jpg" alt="user's post" id="post-image">
+                <p class="caption">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, eaque?</p>
+            </article>
+            <article id="grid-container">
+                <img src="./images/photo3.jpg" alt="user's post" id="post-image">
+                <p class="caption">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, eaque?</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <img src="./logo.png" alt="Moment Mosaic logo" id="logo">
+        <p>&copy; eknox-codes 2024</p>
+        <nav>
+            <ul id="footer-ul">
+                <li>
+                    <a href="" class="foot-ul">Contact Us</a>
+                </li>
+                <li>
+                    <a href="" class="foot-ul">About Us</a>
+                </li>
+                <li>
+                    <a href="" class="foot-ul">Terms and Conditions</a>
+                </li>
+                <li>
+                    <a href="" class="foot-ul">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="" class="foot-ul">Cookie Policy</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
